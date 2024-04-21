@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>x o game</title>
+ <style>
+ body{
+   background: #333;
+ }
+   .game{
+     width: 350px;
+     text-align: center;
+     color: #fff;
+     margin: auto;
+     background: #222;
+     border-radius: 20px;
+     border: 2px solid #1a0202;
+   }
+   .title{
+     background: #1a0202;
+    font-size: 20px;
+     padding: 10px 0;
+     border-radius: 20px;
+   }
+   span{
+     color: #fa0;
+   }
+   .bord{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     padding: 20px;
+   }
+   .square{
+     text-align: center;
+     width: 100px;
+     height: 100px;
+     background: #666;
+     border-radius: 20px;
+     margin: 2px;
+     font-size: 75px;
+     font-weight: 500;
+     color: #fff;
+   }
+   .square:hover{
+     background: #222;
+     cursor: pointer;
+   }
+   .btn{
+     width: 100%;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     margin: 20px 10px;
+   }
+      .btn button{
+        border: none;
+        background: #1a0202;
+        color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .btn button:hover{
+        background: #0100001b
+      }
+ </style>
+ </head>
+ <body>
+   <div class="game">
+     <div class="title"><span>X O </span>game</div>
+     <div class="bord">
+     <div class="square" id="item1" onclick="game(this.id)"></div>
+     <div class="square" id="item2" onclick="game(this.id)"></div>
+     <div class="square" id="item3" onclick="game(this.id)"></div>
+     <div class="square" id="item4" onclick="game(this.id)"></div>
+     <div class="square" id="item5" onclick="game(this.id)"></div>
+     <div class="square" id="item6" onclick="game(this.id)"></div>
+     <div class="square" id="item7" onclick="game(this.id)"></div>
+     <div class="square" id="item8" onclick="game(this.id)"></div>
+     <div class="square" id="item9" onclick="game(this.id)"></div>
+   </div>
+      <div class="btn"><button type="button" onclick="location.reload()">restart</button></div>
+   </div>
+
+   <script src="main.js"></script>
+ </body>
+ 
